@@ -1,0 +1,29 @@
+:root {
+  --color-background: #003F4D;
+  --color-orange: #FF7A00;
+}
+
+body {
+  background-color: var(--color-background);
+  background-image: url("./images/bg.svg");
+}
+
+.paper {
+  position: absolute;
+  background-color: white;
+
+  border-radius: 0;
+  border: 0.5px solid black;
+}
+
+.menu {
+  color: var(--color-orange);
+
+  font-size: 40px;
+  padding: 5px;
+
+  top: 20px;
+  right: 20px;
+  transform: rotate(13deg);
+  text-decoration: underline;
+}
