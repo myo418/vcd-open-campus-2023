@@ -1,11 +1,18 @@
 :root {
   --color-background: #003F4D;
   --color-orange: #FF7A00;
+  --color-blue: #0094FF;
+}
+
+@font-face {
+  font-family: 'Anthony';
+  src: url('./fonts/Anthony.woff') format('woff');
 }
 
 body {
   background-color: var(--color-background);
-  background-image: url("./images/bg.svg");
+  background-image: url("./images/background.svg");
+  height: 4000px;
 }
 
 .paper {
@@ -16,14 +23,25 @@ body {
   border: 0.5px solid black;
 }
 
-.menu {
+
+.font-anthony {
+  font-family: 'Anthony', sans-serif;
+  font-weight: 900;
+}
+
+.color-orange {
   color: var(--color-orange);
+}
 
-  font-size: 40px;
-  padding: 5px;
+.color-blue {
+  color: var(--color-blue);
+}
 
-  top: 20px;
-  right: 20px;
+.menu {
+  top: 2vw;
+  right: 2vw;
+  font-size: 3vw;
+  padding: 0 0.3vw 0.3vw 0.3vw;
   transform: rotate(13deg);
   text-decoration: underline;
 }
