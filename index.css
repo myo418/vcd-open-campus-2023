@@ -60,6 +60,7 @@ body {
 .buttons {
   position: absolute;
   background-color: white;
+  cursor: pointer;
 
   border-radius: 0;
   border: 0.5px solid black;
