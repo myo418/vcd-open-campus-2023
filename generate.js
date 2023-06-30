@@ -15,12 +15,12 @@ function generateStickyElements() {
   const layout = {
     texts: [
       {
-        top: "456px",
+        top: "306px",
         left: "523px",
         angle: "-12deg",
         value: texts.visualCommunicationDesign,
-        fontSize: "7vw",
-        classes: [classes.fontAnthony, classes.colorBlue],
+        fontSize: "6vw",
+        classes: [classes.fontAnthony, classes.colorOrange],
       },
       {
         top: "188px",
@@ -55,7 +55,23 @@ function generateStickyElements() {
         classes: [classes.fontAnthony, classes.colorBlue],
       },
       {
-        top: "0px",
+        top: "-10px",
+        left: "1281px",
+        angle: "14deg",
+        value: "2023",
+        fontSize: "2vw",
+        classes: [classes.colorOrange],
+      },
+      {
+        top: "60px",
+        left: "1281px",
+        angle: "14deg",
+        value: "2023",
+        fontSize: "2vw",
+        classes: [classes.colorOrange],
+      },
+      {
+        top: "140px",
         left: "1281px",
         angle: "14deg",
         value: "2023",
