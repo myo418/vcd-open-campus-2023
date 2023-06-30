@@ -19,8 +19,8 @@ function generateStickyElements() {
   const layout = {
     parts: [
       {
-        x: "523px",
-        y: "456px",
+        top: "456px",
+        left: "523px",
         angle: "-12deg",
         type: "text",
         value: "Visual<br>Communication<br>Design",
@@ -28,8 +28,8 @@ function generateStickyElements() {
         classes: ["font-anthony", "color-orange"],
       },
       {
-        x: "1101px",
-        y: "159px",
+        top: "159px",
+        left: "1101px",
         angle: "26deg",
         type: "text",
         value: "Open<br>CamPus",
@@ -37,8 +37,8 @@ function generateStickyElements() {
         classes: ["font-anthony", "outline-blue"],
       },
       {
-        x: "1281px",
-        y: "0px",
+        top: "0px",
+        left: "1281px",
         angle: "14deg",
         type: "text",
         value: "2023",
@@ -52,9 +52,9 @@ function generateStickyElements() {
     if (part.type === "text") {
       const sticky = document.createElement("div");
       sticky.innerHTML = part.value;
-      sticky.setAttribute("data-top", part.y);
-      sticky.style.top = getAdjustedPixel(part.y) + "px";
-      sticky.style.left = getAdjustedPixel(part.x) + "px";
+      sticky.setAttribute("data-top", getAdjustedVw(part.top));
+      sticky.style.top = getAdjustedVw(part.top);
+      sticky.style.left = getAdjustedVw(part.left);
       sticky.style.transform = `rotate(${part.angle})`;
       sticky.style.fontSize = part.fontSize;
       sticky.classList.add("paper");
@@ -67,3 +67,12 @@ function generateStickyElements() {
   });
 }
 
+function getAdjustedVw(size) {
+  if (typeof size !== "string") return null;
+  if (size.endsWith("vw")) return size;
+  if (size.endsWith("px")) {
+    const pixel = size.slice(0, size.length - 2);
+    return (pixel  / 1920) * 100 + "vw";
+  }
+  return null;
+}

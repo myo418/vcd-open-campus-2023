@@ -4,35 +4,36 @@ fixStickyElementPositions();
 window.addEventListener("scroll", fixStickyElementPositions);
 
 document.getElementById("menu").onclick = () => {
-  document.getElementById("menu-container").classList.add("open")
+  document.getElementById("menu-container").classList.add("open");
   isMenuOpen = true;
 };
 
 document.getElementById("close").onclick = () => {
-  document.getElementById("menu-container").classList.remove("open")
+  document.getElementById("menu-container").classList.remove("open");
   isMenuOpen = false;
 };
 
 function fixStickyElementPositions() {
   const elms = document.querySelectorAll(".paper");
   elms.forEach((elm) => {
-    let dataTopPixel = getAdjustedPixel(elm.getAttribute("data-top"));
+    const top = elm.getAttribute("data-top")
+    let dataTopPixel = getAdjustedPixel(top);
     if (dataTopPixel !== null) {
       if (window.scrollY < dataTopPixel) {
-        elm.style.top = dataTopPixel + "px";
+        elm.style.top = top;
         elm.style.position = "absolute";
       } else {
         elm.style.top = 0;
         elm.style.position = "fixed";
       }
     }
-    let dataLeftPixel = getAdjustedPixel(elm.getAttribute("data-left"));
-    if (dataLeftPixel !== null) {
-      elm.style.left = dataLeftPixel + "px";
+
+    if (elm.getAttribute("data-left") !== null) {
+      elm.style.left = elm.getAttribute("data-left");
     }
-    let dataRightPixel = getAdjustedPixel(elm.getAttribute("data-right"));
-    if (dataRightPixel !== null) {
-      elm.style.right = dataRightPixel + "px";
+
+    if (elm.getAttribute("data-right") !== null) {
+      elm.style.right = elm.getAttribute("data-right");
     }
   });
 }
@@ -50,3 +51,4 @@ function getAdjustedPixel(size) {
     return null;
   }
 }
+
