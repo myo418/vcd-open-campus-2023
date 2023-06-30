@@ -1,18 +1,5 @@
 generateStickyElements();
 
-function getAdjustedPixel(size) {
-  const screenWidth = document.documentElement.clientWidth;
-  if (size.endsWith("px")) {
-    const dataTopPxAs1920 = size.slice(0, size.length - 2);
-    return (dataTopPxAs1920 * screenWidth) / 1920;
-  } else if (size.endsWith("vw")) {
-    const dataTopVw = size.slice(0, size.length - 2);
-    return (dataTopVw * screenWidth) / 100;
-  } else {
-    return null;
-  }
-}
-
 function generateStickyElements() {
   const container = document.getElementById("container");
 
@@ -42,6 +29,15 @@ function generateStickyElements() {
         angle: "14deg",
         type: "text",
         value: "2023",
+        fontSize: "2vw",
+        classes: ["outline-orange"],
+      },
+      {
+        top: "50px",
+        left: "50px",
+        angle: "14deg",
+        type: "text",
+        value: "デ",
         fontSize: "2vw",
         classes: ["outline-orange"],
       },
