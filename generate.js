@@ -42,10 +42,9 @@ function generateStickyElements() {
         angle: "14deg",
         type: "text",
         value: "2023",
-        fontSize: "4vw",
+        fontSize: "2vw",
         classes: ["outline-orange"],
       },
-      // {x: 0, y: 0, angle: 0, type: 'image', value: 'char-de.svg', width: '100px', height: '100px'}
     ],
   };
   

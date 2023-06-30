@@ -1,19 +1,26 @@
 :root {
-  --color-background: #003F4D;
-  --color-orange: #FF7A00;
-  --color-blue: #0094FF;
-  --color-light-blue: #00A0E9;
+  --color-background: #003f4d;
+  --color-orange: #ff7a00;
+  --color-blue: #0094ff;
+  --color-light-blue: #00a0e9;
 }
 
 @font-face {
-  font-family: 'Anthony';
-  src: url('./fonts/Anthony.woff') format('woff');
+  font-family: "Anthony";
+  src: url("./fonts/Anthony.woff") format("woff");
 }
 
 body {
   background-color: var(--color-background);
   background-image: url("./images/background.svg");
   height: 4000px;
+}
+
+#menu-container {
+ position: fixed;
+ width: 100%;
+ height: 100%;
+ z-index: 1;
 }
 
 .paper {
@@ -25,7 +32,7 @@ body {
 }
 
 .font-anthony {
-  font-family: 'Anthony', sans-serif;
+  font-family: "Anthony", sans-serif;
 }
 
 .color-orange {
@@ -41,21 +48,82 @@ body {
 }
 
 .outline-orange {
-	color: transparent;
-	-webkit-text-stroke: 1px var(--color-orange);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-orange);
 }
 
 .outline-blue {
-	color: transparent;
-	-webkit-text-stroke: 1px var(--color-blue);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--color-blue);
 }
 
-.menu {
-  top: 2vw;
-  right: 2vw;
+.buttons {
+  position: absolute;
+  background-color: white;
+
+  border-radius: 0;
+  border: 0.5px solid black;
+
   font-size: 3vw;
   font-weight: 900;
   padding: 0 0.3vw 0.3vw 0.3vw;
-  transform: rotate(13deg);
   text-decoration: underline;
+  box-shadow: 0 0 3px 1px darkslategray;
 }
+
+.menu-toggle {
+  transform: rotate(13deg);
+  top: 2vw;
+  right: 2vw;
+}
+
+.menu-button {
+  display: none;
+}
+
+.home-button {
+  transform: rotate(-13deg);
+  top: 12vw;
+  left: 26vw;
+}
+
+.timetable-button {
+  transform: rotate(8deg);
+  top: 13vw;
+  left: 48vw;
+}
+
+.contents-button {
+  transform: rotate(-7.5deg);
+  top: 19vw;
+  left: 26vw;
+}
+
+.floor-map-button {
+  transform: rotate(15deg);
+  top: 22vw;
+  left: 48vw;
+}
+
+.register-button {
+  transform: rotate(15deg);
+  top: 28vw;
+  left: 26vw;
+}
+
+#close {
+  display: none;
+}
+
+#menu-container.open > #close {
+  display: block;
+}
+
+#menu-container.open > #menu {
+  display: none;
+}
+
+#menu-container.open > .menu-button {
+  display: block;
+}
+
