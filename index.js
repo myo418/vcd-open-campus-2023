@@ -1,54 +1,8 @@
-const container = document.getElementById("container");
-generateStickyElements();
-
-const elms = document.querySelectorAll(".paper");
 fixStickyElementPositions();
 window.addEventListener("scroll", fixStickyElementPositions);
 
-function generateStickyElements() {
-  const layout = {
-    parts: [
-      {
-        x: "523px",
-        y: "456px",
-        angle: "-12deg",
-        type: "text",
-        value: "Visual<br>Communication<br>Design",
-        fontSize: "7vw",
-        classes: ["font-anthony", "color-orange"],
-      },
-      {
-        x: "1101px",
-        y: "159px",
-        angle: "26deg",
-        type: "text",
-        value: "Open<br>CamPus",
-        fontSize: "4vw",
-        classes: ["font-anthony", "color-blue"],
-      },
-      // {x: 0, y: 0, angle: 0, type: 'image', value: 'char-de.svg', width: '100px', height: '100px'}
-    ],
-  };
-  layout.parts.forEach((part) => {
-    if (part.type === "text") {
-      const sticky = document.createElement("div");
-      sticky.innerHTML = part.value;
-      sticky.setAttribute("data-top", part.y);
-      sticky.style.top = getAdjustedPixel(part.y) + "px";
-      sticky.style.left = getAdjustedPixel(part.x) + "px";
-      sticky.style.transform = `rotate(${part.angle})`;
-      sticky.style.fontSize = part.fontSize;
-      sticky.classList.add("paper");
-      part.classes.forEach((cls) => {
-        sticky.classList.add(cls);
-      });
-
-      container.append(sticky);
-    }
-  });
-}
-
 function fixStickyElementPositions() {
+  const elms = document.querySelectorAll(".paper");
   elms.forEach((elm) => {
     const dataTop = elm.getAttribute("data-top");
     let dataTopPixel = getAdjustedPixel(dataTop);

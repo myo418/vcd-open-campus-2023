@@ -2,6 +2,7 @@
   --color-background: #003F4D;
   --color-orange: #FF7A00;
   --color-blue: #0094FF;
+  --color-light-blue: #00A0E9;
 }
 
 @font-face {
@@ -33,6 +34,20 @@ body {
 
 .color-blue {
   color: var(--color-blue);
+}
+
+.color-light-blue {
+  color: var(--color-light-blue);
+}
+
+.outline-orange {
+	color: transparent;
+	-webkit-text-stroke: 1px var(--color-orange);
+}
+
+.outline-blue {
+	color: transparent;
+	-webkit-text-stroke: 1px var(--color-blue);
 }
 
 .menu {
