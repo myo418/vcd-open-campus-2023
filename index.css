@@ -46,7 +46,7 @@
   position: fixed;
   width: 100vw;
   height: 100%;
-  z-index: 1;
+  z-index: 100;
 }
 
 .menu-toggle {
@@ -102,7 +102,7 @@
 body {
   background-color: var(--color-background);
   background-image: url("./images/background.svg");
-  height: 2876px;
+  height: 2276px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -117,7 +117,7 @@ body {
   overflow-x: hidden;
 }
 
-.description {
+.title {
   color: white;
   width: 100%;
   text-align: center;
@@ -147,4 +147,18 @@ body {
   box-shadow: 0 0 3px 1px darkslategray;
 }
 
+.card {
+  padding: 1vw;
+}
 
+.summary {
+  width: 15vw;
+  z-index: 30;
+  transform: rotate(10deg);
+}
+
+.description {
+  width: 30vw;
+  z-index: 30;
+  transform: rotate(-12deg);
+}

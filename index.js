@@ -25,7 +25,7 @@ function fixStickyElementPositions() {
         elm.style.top = top;
         elm.style.position = "absolute";
       } else {
-        elm.style.top = 0;
+        elm.style.top = dataTopPixel < 0 ? top : 0;
         elm.style.position = "fixed";
       }
     }
