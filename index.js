@@ -39,8 +39,8 @@ function addMenuToggleAnimation() {
       const dataLeft = elm.getAttribute("data-left");
       const elmCenter = getAdjustedPixel(elm.style.left) + elm.offsetWidth / 2;
       const isLeft = elmCenter < screen.width / 2;
-      const leftTarget = -elm.offsetWidth / 2 + "px";
-      const rightTarget = screen.width - elm.offsetWidth / 2 + "px";
+      const leftTarget = toVw(-elm.offsetWidth / 4);
+      const rightTarget = toVw(screen.width - elm.offsetWidth /4 );
 
       console.log('----')
       console.log(elm.offsetWidth)
@@ -81,4 +81,8 @@ function getAdjustedPixel(size) {
   } else {
     return null;
   }
+}
+
+function toVw(pixel) {
+  return pixel / screen.width * 100 + 'vw';
 }
