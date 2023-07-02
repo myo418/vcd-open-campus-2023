@@ -4,19 +4,21 @@ fixStickyElementPositions();
 window.addEventListener("scroll", fixStickyElementPositions);
 
 document.getElementById("menu").onclick = () => {
-  document.getElementById("menu-container").classList.add("open");
+  document.getElementById("container").classList.add("open");
   isMenuOpen = true;
+  addCloseOpenAnimation();
 };
 
 document.getElementById("close").onclick = () => {
-  document.getElementById("menu-container").classList.remove("open");
+  document.getElementById("container").classList.remove("open");
   isMenuOpen = false;
+  addCloseOpenAnimation();
 };
 
 function fixStickyElementPositions() {
   const elms = document.querySelectorAll(".paper");
   elms.forEach((elm) => {
-    const top = elm.getAttribute("data-top")
+    const top = elm.getAttribute("data-top");
     let dataTopPixel = getAdjustedPixel(top);
     if (dataTopPixel !== null) {
       if (window.scrollY < dataTopPixel) {
@@ -27,13 +29,33 @@ function fixStickyElementPositions() {
         elm.style.position = "fixed";
       }
     }
+  });
+}
 
+function addCloseOpenAnimation() {
+  const elms = document.querySelectorAll(".paper");
+  elms.forEach((elm) => {
     if (elm.getAttribute("data-left") !== null) {
-      elm.style.left = elm.getAttribute("data-left");
-    }
+      const dataLeft = elm.getAttribute("data-left");
+      const elmCenter = getAdjustedPixel(elm.style.left) + elm.offsetWidth / 2;
+      const isLeft = elmCenter < window.screen.width / 2;
+      const leftTarget = -elm.offsetWidth / 2 + "px";
+      const rightTarget = window.screen.width - elm.offsetWidth / 2 + "px";
 
-    if (elm.getAttribute("data-right") !== null) {
-      elm.style.right = elm.getAttribute("data-right");
+      const targetLeft = isMenuOpen
+        ? isLeft
+          ? leftTarget
+          : rightTarget
+        : dataLeft;
+      elm.animate(
+        {
+          left: [elm.clientLeft, targetLeft],
+        },
+        {
+          fill: "forwards",
+          duration: 100,
+        }
+      );
     }
   });
 }
@@ -51,4 +73,3 @@ function getAdjustedPixel(size) {
     return null;
   }
 }
-

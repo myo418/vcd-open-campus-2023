@@ -1,7 +1,7 @@
 generateStickyElements();
 
 function generateStickyElements() {
-  const container = document.getElementById("container");
+  const container = document.getElementById("paper-container");
   const texts = {
     visualCommunicationDesign: "Visual<br>Communication<br>Design",
     nozoite: "のぞいてみよう、視デづくり!"
@@ -102,6 +102,7 @@ function generateStickyElements() {
       const sticky = document.createElement("div");
       sticky.innerHTML = text.value;
       sticky.setAttribute("data-top", getAdjustedVw(text.top));
+      sticky.setAttribute("data-left", getAdjustedVw(text.left));
       sticky.style.top = getAdjustedVw(text.top);
       sticky.style.left = getAdjustedVw(text.left);
       sticky.style.transform = `rotate(${text.angle})`;
@@ -117,6 +118,7 @@ function generateStickyElements() {
   layout.images.forEach((image) => {
       const sticky = document.createElement("img");
       sticky.setAttribute("data-top", getAdjustedVw(image.top));
+      sticky.setAttribute("data-left", getAdjustedVw(image.left));
       sticky.style.top = getAdjustedVw(image.top);
       sticky.style.left = getAdjustedVw(image.left);
       sticky.style.transform = `rotate(${image.angle})`;
