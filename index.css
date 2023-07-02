@@ -43,28 +43,28 @@
 
 /* for menu */
 
-#menu-container {
+/* #menu-container {
   position: fixed;
   width: 100vw;
   height: 100%;
-  z-index: 100;
-}
+} */
 
 .menu-toggle {
   transform: rotate(13deg);
   top: 2vw;
   right: 2vw;
+  z-index: 100;
 }
 
 #close {
   display: none;
 }
 
-#container.open > div > #close {
+#container.open > #close {
   display: block;
 }
 
-#container.open > div > #menu {
+#container.open > #menu {
   display: none;
 }
 
@@ -109,11 +109,6 @@ body {
 }
 
 #container {
-  width: 100vw;
-  overflow-x: hidden;
-}
-
-#paper-container {
   width: 100vw;
   overflow-x: hidden;
 }

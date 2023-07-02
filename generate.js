@@ -1,7 +1,7 @@
 generateStickyElements();
 
 function generateStickyElements() {
-  const container = document.getElementById("paper-container");
+  const container = document.getElementById("container");
   const texts = {
     visualCommunicationDesign: "Visual<br>Communication<br>Design",
     nozoite: "のぞいてみよう、視デづくり!",
