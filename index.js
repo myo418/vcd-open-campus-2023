@@ -39,24 +39,35 @@ function addMenuToggleAnimation() {
       const dataLeft = elm.getAttribute("data-left");
       const elmCenter = getAdjustedPixel(elm.style.left) + elm.offsetWidth / 2;
       const isLeft = elmCenter < screen.width / 2;
-      const leftTarget = toVw(-elm.offsetWidth / 4);
-      const rightTarget = toVw(screen.width - elm.offsetWidth /4 );
-
-      console.log('----')
-      console.log(elm.offsetWidth)
-      console.log(elmCenter)
-      console.log(screen.width)
-      console.log(isLeft)
-      console.log(leftTarget)
-      console.log(rightTarget)
+      const leftTarget = toVw(-elm.offsetWidth / 2);
+      const rightTarget = toVw(screen.width - elm.offsetWidth / 2);
 
       const targetLeft = isMenuOpen
         ? isLeft
           ? leftTarget
           : rightTarget
         : dataLeft;
-      console.log(targetLeft)
-        elm.animate(
+      elm.animate(
+        {
+          left: [elm.clientLeft, targetLeft],
+        },
+        {
+          fill: "forwards",
+          duration: 100,
+        }
+      );
+    }
+  });
+
+  const menuButtons = document.querySelectorAll(".menu-button");
+  menuButtons.forEach((elm) => {
+    if (elm.getAttribute("data-left") !== null) {
+      const dataLeft = elm.getAttribute("data-left");
+      const elmCenter = getAdjustedPixel(elm.style.left) + elm.offsetWidth / 2;
+      const isLeft = elmCenter < screen.width / 2;
+
+      const targetLeft = isMenuOpen ? dataLeft : isLeft ? "-30vw" : "130vw";
+      elm.animate(
         {
           left: [elm.clientLeft, targetLeft],
         },
@@ -84,5 +95,5 @@ function getAdjustedPixel(size) {
 }
 
 function toVw(pixel) {
-  return pixel / screen.width * 100 + 'vw';
+  return (pixel / screen.width) * 100 + "vw";
 }

@@ -55,41 +55,6 @@
   right: 2vw;
 }
 
-.menu-button {
-  display: none;
-}
-
-
-.home-button {
-  transform: rotate(-13deg);
-  top: 12vw;
-  left: 26vw;
-}
-
-.timetable-button {
-  transform: rotate(8deg);
-  top: 13vw;
-  left: 48vw;
-}
-
-.workshop-button {
-  transform: rotate(-7.5deg);
-  top: 19vw;
-  left: 26vw;
-}
-
-.floor-map-button {
-  transform: rotate(15deg);
-  top: 22vw;
-  left: 48vw;
-}
-
-.register-button {
-  transform: rotate(15deg);
-  top: 28vw;
-  left: 26vw;
-}
-
 #close {
   display: none;
 }
@@ -102,8 +67,34 @@
   display: none;
 }
 
-#container.open > div > .menu-button {
-  display: block;
+.home-button {
+  transform: rotate(-13deg);
+  top: 12vw;
+  left: -30vw;
+}
+
+.timetable-button {
+  transform: rotate(8deg);
+  top: 13vw;
+  left: 130vw;
+}
+
+.workshop-button {
+  transform: rotate(-7.5deg);
+  top: 19vw;
+  left: -30vw;
+}
+
+.floor-map-button {
+  transform: rotate(15deg);
+  top: 22vw;
+  left: 130vw;
+}
+
+.register-button {
+  transform: rotate(15deg);
+  top: 28vw;
+  left: -30vw;
 }
 
 /* for others */
