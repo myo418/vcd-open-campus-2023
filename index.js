@@ -37,7 +37,7 @@ function addMenuToggleAnimation() {
   elms.forEach((elm) => {
     if (elm.getAttribute("data-left") !== null) {
       const dataLeft = elm.getAttribute("data-left");
-      const elmCenter = getAdjustedPixel(elm.style.left) + elm.offsetWidth / 2;
+      const elmCenter =  getAdjustedPixel(dataLeft) + elm.offsetWidth / 2;
       const isLeft = elmCenter < screen.width / 2;
       const leftTarget = toVw(-elm.offsetWidth / 2);
       const rightTarget = toVw(screen.width - elm.offsetWidth / 2);
@@ -63,7 +63,7 @@ function addMenuToggleAnimation() {
   menuButtons.forEach((elm) => {
     if (elm.getAttribute("data-left") !== null) {
       const dataLeft = elm.getAttribute("data-left");
-      const elmCenter = getAdjustedPixel(elm.style.left) + elm.offsetWidth / 2;
+      const elmCenter = getAdjustedPixel(dataLeft) + elm.offsetWidth / 2;
       const isLeft = elmCenter < screen.width / 2;
 
       const targetLeft = isMenuOpen ? dataLeft : isLeft ? "-30vw" : "130vw";
@@ -73,7 +73,7 @@ function addMenuToggleAnimation() {
         },
         {
           fill: "forwards",
-          duration: 100,
+          duration: 200,
         }
       );
     }
