@@ -6,13 +6,13 @@ window.addEventListener("scroll", fixStickyElementPositions);
 document.getElementById("menu").onclick = () => {
   document.getElementById("container").classList.add("open");
   isMenuOpen = true;
-  addCloseOpenAnimation();
+  addMenuToggleAnimation();
 };
 
 document.getElementById("close").onclick = () => {
   document.getElementById("container").classList.remove("open");
   isMenuOpen = false;
-  addCloseOpenAnimation();
+  addMenuToggleAnimation();
 };
 
 function fixStickyElementPositions() {
@@ -32,22 +32,31 @@ function fixStickyElementPositions() {
   });
 }
 
-function addCloseOpenAnimation() {
+function addMenuToggleAnimation() {
   const elms = document.querySelectorAll(".paper");
   elms.forEach((elm) => {
     if (elm.getAttribute("data-left") !== null) {
       const dataLeft = elm.getAttribute("data-left");
       const elmCenter = getAdjustedPixel(elm.style.left) + elm.offsetWidth / 2;
-      const isLeft = elmCenter < window.screen.width / 2;
+      const isLeft = elmCenter < screen.width / 2;
       const leftTarget = -elm.offsetWidth / 2 + "px";
-      const rightTarget = window.screen.width - elm.offsetWidth / 2 + "px";
+      const rightTarget = screen.width - elm.offsetWidth / 2 + "px";
+
+      console.log('----')
+      console.log(elm.offsetWidth)
+      console.log(elmCenter)
+      console.log(screen.width)
+      console.log(isLeft)
+      console.log(leftTarget)
+      console.log(rightTarget)
 
       const targetLeft = isMenuOpen
         ? isLeft
           ? leftTarget
           : rightTarget
         : dataLeft;
-      elm.animate(
+      console.log(targetLeft)
+        elm.animate(
         {
           left: [elm.clientLeft, targetLeft],
         },
