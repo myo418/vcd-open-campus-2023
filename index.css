@@ -1,4 +1,4 @@
-/* for colors */
+/* colors */
 
 :root {
   --color-background: #003f4d;
@@ -21,15 +21,15 @@
 
 .outline-orange {
   color: transparent;
-  -webkit-text-stroke: 1px var(--color-orange);
+  -webkit-text-stroke: wpx var(--color-orange);
 }
 
 .outline-blue {
   color: transparent;
-  -webkit-text-stroke: 1px var(--color-blue);
+  -webkit-text-stroke: 1.5px var(--color-blue);
 }
 
-/* for font */
+/* fonts */
 
 @font-face {
   font-family: "Anthony";
@@ -39,60 +39,10 @@
 .font-anthony {
   font-family: "Anthony", sans-serif;
   line-height: 0.95em;
+  padding: 0 0.1em 0.25em 0.1em;
 }
 
-/* for menu */
-
-.menu-toggle {
-  transform: rotate(13deg);
-  top: 2vw;
-  right: 2vw;
-  z-index: 100;
-}
-
-#close {
-  display: none;
-}
-
-#container.open > #close {
-  display: block;
-}
-
-#container.open > #menu {
-  display: none;
-}
-
-.home-button {
-  transform: rotate(-13deg);
-  top: 12vw;
-  left: -30vw;
-}
-
-.timetable-button {
-  transform: rotate(8deg);
-  top: 13vw;
-  left: 130vw;
-}
-
-.workshop-button {
-  transform: rotate(-7.5deg);
-  top: 19vw;
-  left: -30vw;
-}
-
-.floor-map-button {
-  transform: rotate(15deg);
-  top: 22vw;
-  left: 130vw;
-}
-
-.register-button {
-  transform: rotate(15deg);
-  top: 28vw;
-  left: -30vw;
-}
-
-/* for others */
+/* common */
 
 body {
   background-color: var(--color-background);
@@ -130,16 +80,70 @@ body {
   border-radius: 0;
   border: 0.5px solid black;
 
-  font-size: 3vw;
-  font-weight: 900;
-  padding: 0 0.3vw 0.3vw 0.3vw;
+  font-size: 6vw;
   text-decoration: underline;
+  text-decoration-thickness: 0.05em;
   box-shadow: 0 0 3px 1px darkslategray;
 }
 
 .card {
   padding: 1vw;
 }
+
+/* menu */
+
+#close {
+  display: none;
+}
+
+#container.open > #close {
+  display: block;
+}
+
+#container.open > #menu {
+  display: none;
+}
+
+.menu-toggle {
+  font-size: 4vw;
+  position: fixed;
+  transform: rotate(3deg);
+  top: 1.5vw;
+  right: 1.5vw;
+  z-index: 100;
+}
+
+.menu-button {
+  position: fixed;
+}
+
+.home-button {
+  transform: rotate(-8.5deg);
+  top: 14vw;
+  left: -30vw;
+}
+
+.talk-event-button {
+  transform: rotate(-3deg);
+  top: 27.5vw;
+  left: -30vw;
+}
+
+.workshop-button {
+  transform: rotate(16deg);
+  top: 19.5vw;
+  left: 130vw;
+}
+
+.register-button {
+  transform: rotate(-7.5deg);
+  top: 35.5vw;
+  left: 130vw;
+  padding: 0;
+
+}
+
+/* other */
 
 .summary {
   width: 15vw;

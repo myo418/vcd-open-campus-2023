@@ -16,6 +16,8 @@ function generateStickyElements() {
     colorBlue: 'color-blue',
     colorLightBlue: 'color-light-blue',
     colorOrange: 'color-orange',
+    outlineBlue: 'outline-blue',
+    outlineOrange: 'outline-orange',
     fontAnthony: 'font-anthony'
   }
 
@@ -31,13 +33,13 @@ function generateStickyElements() {
         classes: [classes.fontAnthony, classes.colorOrange],
       },
       {
-        top: "159px",
-        left: "1101px",
+        top: "316px",
+        left: "1034px",
         angle: "26deg",
         zIndex: 3,
         value: texts.openCampus,
-        fontSize: "4vw",
-        classes: [classes.fontAnthony, classes.colorBlue],
+        fontSize: "5.5vw",
+        classes: [classes.fontAnthony, classes.outlineBlue],
       },
       {
         top: "338px",
@@ -396,12 +398,12 @@ function generateStickyElements() {
     images: [
       // top center
       {
-        top: "150px",
-        left: "750px",
-        angle: "5deg",
+        top: "188px",
+        left: "692px",
+        angle: "7deg",
         zIndex: 2,
         value: "bar-shi.svg",
-        size: "16vw",
+        size: "356px",
       },
       {
         top: "500px",
@@ -532,8 +534,7 @@ function generateStickyElements() {
       sticky.style.left = getAdjustedVw(image.left);
       sticky.style.zIndex = image.zIndex;
       sticky.style.transform = `rotate(${image.angle})`;
-      sticky.style.width = image.size;
-      sticky.style.height = image.size;
+      sticky.style.width = getAdjustedVw(image.size);
       sticky.src = './images/' + image.value
       sticky.classList.add("paper");
 

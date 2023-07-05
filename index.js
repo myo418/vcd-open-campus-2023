@@ -9,11 +9,23 @@ document.getElementById("menu").onclick = () => {
   addMenuToggleAnimation();
 };
 
-document.getElementById("close").onclick = () => {
+document.getElementById("close").onclick = () => closeMenu();
+
+for (const button of document.getElementsByClassName("home-button")) {
+  button.onclick = () => closeMenu();
+}
+for (const button of document.getElementsByClassName("workshop-button")) {
+  button.onclick = () => closeMenu();
+}
+for (const button of document.getElementsByClassName("talk-event-button")) {
+  button.onclick = () => closeMenu();
+}
+
+function closeMenu() {
   document.getElementById("container").classList.remove("open");
   isMenuOpen = false;
   addMenuToggleAnimation();
-};
+}
 
 function fixStickyElementPositions() {
   const elms = document.querySelectorAll(".paper");
@@ -37,7 +49,7 @@ function addMenuToggleAnimation() {
   elms.forEach((elm) => {
     if (elm.getAttribute("data-left") !== null) {
       const dataLeft = elm.getAttribute("data-left");
-      const elmCenter =  getAdjustedPixel(dataLeft) + elm.offsetWidth / 2;
+      const elmCenter = getAdjustedPixel(dataLeft) + elm.offsetWidth / 2;
       const isLeft = elmCenter < screen.width / 2;
       const leftTarget = toVw(-elm.offsetWidth / 2);
       const rightTarget = toVw(screen.width - elm.offsetWidth / 2);
