@@ -21,7 +21,7 @@
 
 .outline-orange {
   color: transparent;
-  -webkit-text-stroke: wpx var(--color-orange);
+  -webkit-text-stroke: 1.5px var(--color-orange);
 }
 
 .outline-blue {
@@ -38,6 +38,12 @@
 
 .font-anthony {
   font-family: "Anthony", sans-serif;
+  line-height: 0.75em;
+  padding: 0 0.1em 0.25em 0.1em;
+}
+
+.font-anthony-multi-line {
+  font-family: "Anthony", sans-serif;
   line-height: 0.95em;
   padding: 0 0.1em 0.25em 0.1em;
 }
@@ -47,7 +53,7 @@
 body {
   background-color: var(--color-background);
   background-image: url("./images/background.svg");
-  height: 2276px;
+  height: 8076px;
   width: 100%;
   overflow-x: hidden;
 }
@@ -145,14 +151,39 @@ body {
 
 /* other */
 
+.register {
+  width: 14.5vw;
+  z-index: 4;
+  transform: rotate(3.5deg);
+}
+
 .summary {
-  width: 15vw;
-  z-index: 30;
-  transform: rotate(10deg);
+  width: 22vw;
+  z-index: 21;
+  transform: rotate(5deg);
 }
 
 .description {
-  width: 30vw;
-  z-index: 30;
-  transform: rotate(-12deg);
+  width: 42vw;
+  z-index: 20;
+  transform: rotate(-3.9deg);
 }
+
+.workshop-description {
+  width: 20vw;
+  z-index: 35;
+  transform: rotate(5deg);
+}
+
+.workshop-summary {
+  width: 22vw;
+  z-index: 35;
+  transform: rotate(-3deg);
+}
+
+.to-top {
+  font-size: 4vw;
+  z-index: 60;
+  transform: rotate(2deg);
+}
+
