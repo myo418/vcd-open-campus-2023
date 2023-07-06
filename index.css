@@ -73,16 +73,6 @@ body {
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 600px) {
-  #container {
-    display: none;
-  }
-
-  #container-sp {
-    display: block;
-  }
-}
-
 .title {
   color: white;
   width: 100%;
@@ -131,7 +121,7 @@ body {
 }
 
 .menu-toggle {
-  font-size: 4vw;
+  font-size: 3.9vw;
   position: fixed;
   transform: rotate(3deg);
   top: 1.5vw;
@@ -232,3 +222,19 @@ body {
   transform: rotate(2deg);
 }
 
+
+@media screen and (max-width: 600px) {
+  #container {
+    display: none;
+  }
+
+  #container-sp {
+    display: block;
+  }
+
+  .menu-toggle {
+    font-size: 7.2vw;
+    top: 5vw;
+    right: 3vw;
+  }
+}
