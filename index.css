@@ -55,21 +55,25 @@ body {
   background-image: url("./images/background.svg");
   height: 8076px;
   width: 100%;
+  margin:  0;
   overflow-x: hidden;
+  position:relative;
 }
 
 #container {
   width: 100vw;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
 #container-sp {
   display: none;
   width: 100vw;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   #container {
     display: none;
   }
