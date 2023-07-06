@@ -375,7 +375,7 @@ function generateStickyElements() {
         angle: "-3deg",
         zIndex: 3,
         value: images.nozoite,
-        ize: "24.5vw",
+        size: "24.5vw",
       },
       {
         top: "366px",
@@ -696,7 +696,7 @@ function generateStickyElements() {
       sticky.style.left = getAdjustedVw(text.left);
       sticky.style.zIndex = text.zIndex;
       sticky.style.transform = `rotate(${text.angle})`;
-      sticky.style.fontSize = text.fontSize;
+      sticky.style.fontSize = getAdjustedVw(text.fontSize);
       sticky.classList.add("paper");
       sticky.id = text.id;
       text.classes.forEach((cls) => {
