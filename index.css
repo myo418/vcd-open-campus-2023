@@ -63,6 +63,22 @@ body {
   overflow-x: hidden;
 }
 
+#container-sp {
+  display: none;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 600px){
+  #container {
+    display: none;
+  }
+
+  #container-sp {
+    display: block;
+  }
+}
+
 .title {
   color: white;
   width: 100%;
@@ -120,6 +136,7 @@ body {
 }
 
 .menu-button {
+  z-index: 100;
   position: fixed;
 }
 
