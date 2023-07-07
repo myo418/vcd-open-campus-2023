@@ -201,7 +201,7 @@ body {
 
 .event-description {
   width: 41.77vw;
-  z-index: 20;
+  z-index: 21;
   transform: rotate(-3.9deg);
 }
 
@@ -219,25 +219,25 @@ body {
 
 .talk-event-nyushi {
   width: 20vw;
-  z-index: 40;
+  z-index: 42;
   transform: rotate(4.18deg);
 }
 
 .talk-event-meeting {
   width: 16.7vw;
-  z-index: 40;
+  z-index: 42;
   transform: rotate(-3.33deg);
 }
 
 .talk-event-recipe {
   width: 20vw;
-  z-index: 40;
+  z-index: 44;
   transform: rotate(-2.26deg);
 }
 
 .talk-event-shigo {
   width: 20vw;
-  z-index: 40;
+  z-index: 44;
   transform: rotate(2.84deg);
 }
 
