@@ -176,25 +176,25 @@ body {
 .home-button {
   transform: rotate(-8.5deg);
   top: 14vw;
-  left: -30vw;
+  left: -50vw;
 }
 
 .talk-event-button {
   transform: rotate(-3deg);
   top: 27.5vw;
-  left: -30vw;
+  left: -50vw;
 }
 
 .workshop-button {
   transform: rotate(16deg);
   top: 19.5vw;
-  left: 130vw;
+  left: 150vw;
 }
 
 .register-button {
   transform: rotate(-7.5deg);
   top: 35.5vw;
-  left: 130vw;
+  left: 150vw;
   width: 24.7vw;
   padding: 0;
 }
@@ -303,27 +303,32 @@ body {
 
   .home-button {
     top: 58.1vw;
-    left: -30vw;
+    left: -50vw;
     transform: rotate(-8.51deg);
   }
 
   .workshop-button {
     top: 77.7vw;
-    left: 130vw;
+    left: 150vw;
     transform: rotate(2.95deg);
   }
 
   .talk-event-button {
     top: 99vw;
-    left: 130vw;
+    left: 150vw;
     transform: rotate(-3.15deg);
   }
 
   .register-button {
     top: 120.6vw;
-    left: -30vw;
+    left: -50vw;
     width: 49.7vw;
     transform: rotate(-7.4deg);
+  }
+
+  .register {
+    width: 26.1vw;
+    z-index: 15;
   }
 
   .event-description {

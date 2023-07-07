@@ -86,7 +86,7 @@ function addMenuToggleAnimation() {
       const elmCenter = getAdjustedPixel(dataLeft) + elm.offsetWidth / 2;
       const isLeft = elmCenter < screen.width / 2;
 
-      const targetLeft = isMenuOpen ? dataLeft : isLeft ? "-30vw" : "130vw";
+      const targetLeft = isMenuOpen ? dataLeft : isLeft ? "-50vw" : "150vw";
       elm.animate(
         {
           left: [elm.style.left, targetLeft],
