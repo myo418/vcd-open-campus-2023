@@ -9,7 +9,6 @@
 
 ## Bugs
 
-- [ ] talk eventのz-index
 - [ ] background、右側でずれる
 - [ ] 下の方の要素、stickyの動きがずれる。
 - [ ] スマホ系、safariだと横スクロール発生する
