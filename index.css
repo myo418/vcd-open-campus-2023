@@ -36,6 +36,11 @@
   src: url("./fonts/Anthony.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Jp-kaku";
+  src: url("./fonts/OC2023_OriginalFont-R.otf") format("otf");
+}
+
 .font-anthony {
   font-family: "Anthony", sans-serif;
   line-height: 0.75em;
@@ -46,6 +51,12 @@
   font-family: "Anthony", sans-serif;
   line-height: 0.95em;
   padding: 0 0.1em 0.25em 0.1em;
+}
+
+.font-tazugane {
+  font-family: 'TazuganeGothicRegular';
+  font-style: 'Normal';
+  font-stretch: 'Normal';
 }
 
 /* common */
@@ -106,6 +117,11 @@ body {
 .card {
   padding: 1vw;
   white-space: normal;
+  font-size: 1vw;
+}
+
+.item-title {
+  font-size: 0.8vw;
 }
 
 /* menu */
@@ -174,21 +190,18 @@ body {
   width: 22vw;
   z-index: 21;
   transform: rotate(5deg);
-  white-space: normal;
 }
 
 .event-description {
-  width: 42vw;
+  width: 41.77vw;
   z-index: 20;
   transform: rotate(-3.9deg);
-  white-space: normal;
 }
 
 .workshop-description {
   width: 20vw;
   z-index: 35;
   transform: rotate(5deg);
-  white-space: normal;
 }
 
 .workshop-summary {
