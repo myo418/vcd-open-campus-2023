@@ -247,6 +247,9 @@ body {
   transform: rotate(2deg);
 }
 
+.hidden-anchor {
+  position: absolute;
+}
 
 @media screen and (max-width: 600px) {
   #container {

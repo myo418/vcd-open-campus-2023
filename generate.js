@@ -230,7 +230,6 @@ function generateStickyElements() {
         value: "Workshop",
         fontSize: "160px",
         classes: [classes.fontAnthony, classes.colorOrange],
-        id: "workshop"
       },
       {
         top: "4569px",
@@ -259,7 +258,6 @@ function generateStickyElements() {
         value: "Talk Event",
         fontSize: "160px",
         classes: [classes.fontAnthony, classes.colorOrange],
-        id: "talk-event"
       },
       // bottom      
       {
