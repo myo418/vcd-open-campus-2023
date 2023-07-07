@@ -68,6 +68,12 @@
 
 /* common */
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background-color: var(--color-background);
   background-image: url("./images/background.svg");
@@ -76,6 +82,14 @@ body {
   margin:  0;
   overflow-x: hidden;
   position:relative;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 #container {
@@ -264,5 +278,30 @@ body {
     font-size: 7.2vw;
     top: 5vw;
     right: 3vw;
+  }
+
+  .buttons {
+    font-size: 11.8vw;
+  }
+
+  .home-button {
+    top: 58.1vw;
+    left: -30vw;
+  }
+  
+  .workshop-button {
+    top: 77.7vw;
+    left: 130vw;
+  }
+  
+  .talk-event-button {
+    top: 99vw;
+    left: -30vw;
+  }
+  
+  .register-button {
+    top: 120.6vw;
+    left: 130vw;
+    width: 24.7vw;
   }
 }

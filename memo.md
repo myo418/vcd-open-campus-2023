@@ -2,6 +2,7 @@
 
 - 背景のカッターマットの間隔、現状で問題ないか？
 - Back To topはBack to Top?
+- Anthonyに似た日本語どこで使う？
 
 ## Todos
 
