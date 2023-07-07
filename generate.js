@@ -1,17 +1,17 @@
 generateStickyElements();
 
 function generateStickyElements() {
-  const container = document.getElementById("container");
   const texts = {
     visualCommunicationDesign: "Visual<br>Communication<br>Design",
     nozoite: "のぞいてみよう、視デづくり!",
-    openCampus: 'Open<br>CamPus',
-    time: '9:30-16:30',
-    dateFrom: '07.15 >>>',
-    dateTo: '07.16',
-    summary: "武蔵野美術大学 鷹の台キャンパス 8（15日のみ）・9・10号館 〒187-8505 東京都小平市小川町1-736 Google Map<br><br>入場",
-    description: ""
-  }
+    openCampus: "Open<br>CamPus",
+    time: "9:30-16:30",
+    dateFrom: "07.15 >>>",
+    dateTo: "07.16",
+    summary:
+      "武蔵野美術大学 鷹の台キャンパス 8（15日のみ）・9・10号館 〒187-8505 東京都小平市小川町1-736 Google Map<br><br>入場",
+    description: "",
+  };
   const images = {
     barShi: "bar-shi.svg",
     barDe: "bar-de.svg",
@@ -24,16 +24,16 @@ function generateStickyElements() {
     year: "text-year.svg",
     place: "text-place.svg",
     time: "text-time.svg",
-  }
+  };
   const classes = {
-    colorBlue: 'color-blue',
-    colorLightBlue: 'color-light-blue',
-    colorOrange: 'color-orange',
-    outlineBlue: 'outline-blue',
-    outlineOrange: 'outline-orange',
-    fontAnthony: 'font-anthony',
-    fontAnthonyMultiLine: 'font-anthony-multi-line'
-  }
+    colorBlue: "color-blue",
+    colorLightBlue: "color-light-blue",
+    colorOrange: "color-orange",
+    outlineBlue: "outline-blue",
+    outlineOrange: "outline-orange",
+    fontAnthony: "font-anthony",
+    fontAnthonyMultiLine: "font-anthony-multi-line",
+  };
 
   const layout = {
     texts: [
@@ -259,7 +259,7 @@ function generateStickyElements() {
         fontSize: "160px",
         classes: [classes.fontAnthony, classes.colorOrange],
       },
-      // bottom      
+      // bottom
       {
         top: "6089.93px",
         left: "-187.84px",
@@ -322,6 +322,117 @@ function generateStickyElements() {
         value: texts.visualCommunicationDesign,
         fontSize: "190px",
         classes: [classes.fontAnthonyMultiLine, classes.colorBlue],
+      },
+    ],
+    spTexts: [
+      // center top
+      {
+        top: "525px",
+        left: "458px",
+        angle: "-14deg",
+        value: texts.visualCommunicationDesign,
+        fontSize: "120px",
+        classes: [classes.fontAnthonyMultiLine, classes.colorOrange],
+      },
+      {
+        top: "316px",
+        left: "1034px",
+        angle: "26deg",
+        zIndex: 3,
+        value: texts.openCampus,
+        fontSize: "120px",
+        classes: [classes.fontAnthonyMultiLine, classes.outlineBlue],
+      },
+      {
+        top: "903px",
+        left: "783px",
+        angle: "-2deg",
+        zIndex: 4,
+        value: "SAT",
+        fontSize: "55px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      {
+        top: "932px",
+        left: "470px",
+        angle: "4.5deg",
+        zIndex: 3,
+        value: "07.15 >>> ",
+        fontSize: "120px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      {
+        top: "1047px",
+        left: "540px",
+        angle: "-2deg",
+        zIndex: 4,
+        value: "07.16",
+        fontSize: "120px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      {
+        top: "1169px",
+        left: "501px",
+        angle: "-2deg",
+        zIndex: 5,
+        value: "SUN",
+        fontSize: "55px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      {
+        top: "1156px",
+        left: "776px",
+        angle: "-10deg",
+        zIndex: 3,
+        value: texts.time,
+        fontSize: "55px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      // left top
+      {
+        top: "76px",
+        left: "-275px",
+        angle: "120deg",
+        value: texts.visualCommunicationDesign,
+        fontSize: "120px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      {
+        top: "413px",
+        left: "-66px",
+        angle: "-42deg",
+        zIndex: 4,
+        value: texts.openCampus,
+        fontSize: "60px",
+        classes: [classes.fontAnthony, classes.outlineOrange],
+      },
+      {
+        top: "934px",
+        left: "-426px",
+        angle: "130deg",
+        zIndex: 1,
+        value: texts.dateFrom,
+        fontSize: "220px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      // right top
+      {
+        top: "87px",
+        left: "1488px",
+        angle: "-147deg",
+        zIndex: 1,
+        value: "Design",
+        fontSize: "120px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      {
+        top: "427px",
+        left: "1701px",
+        angle: "4.5deg",
+        zIndex: 1,
+        value: "Visual",
+        fontSize: "120px",
+        classes: [classes.fontAnthony, classes.colorBlue],
       },
     ],
     images: [
@@ -682,42 +793,196 @@ function generateStickyElements() {
         value: images.nozoite,
         size: "569.87px",
       },
-    ]
+    ],
+    spImages: [
+      {
+        top: "188px",
+        left: "692px",
+        angle: "7deg",
+        zIndex: 2,
+        value: images.barShi,
+        size: "356px",
+      },
+      {
+        top: "782px",
+        left: "936px",
+        angle: "22deg",
+        zIndex: 3,
+        value: images.barDe,
+        size: "362px",
+      },
+      {
+        top: "531px",
+        left: "465px",
+        angle: "7deg",
+        zIndex: 3,
+        value: images.nozoite,
+        size: "372px",
+      },
+      {
+        top: "743px",
+        left: "1115px",
+        angle: "7.5deg",
+        zIndex: 3,
+        value: images.place,
+        size: "329px",
+      },
+      // top left
+      {
+        top: "246px",
+        left: "62px",
+        angle: "-3deg",
+        zIndex: 2,
+        value: images.nozoite,
+        size: "18.5vw",
+      },
+      {
+        top: "301px",
+        left: "-6px",
+        angle: "-3deg",
+        zIndex: 3,
+        value: images.nozoite,
+        size: "24.5vw",
+      },
+      {
+        top: "366px",
+        left: "-33px",
+        angle: "7deg",
+        zIndex: 2,
+        value: images.nozoite,
+        size: "29vw",
+      },
+      {
+        top: "-32px",
+        left: "268px",
+        angle: "-20deg",
+        zIndex: 2,
+        value: images.boneShi,
+        size: "245px",
+      },
+      {
+        top: "-154px",
+        left: "393px",
+        angle: "15deg",
+        zIndex: 3,
+        value: images.roundDe,
+        size: "254px",
+      },
+      {
+        top: "950px",
+        left: "-115px",
+        angle: "-17deg",
+        value: images.time,
+        size: "409px",
+      },
+      // top right
+      {
+        top: "-10px",
+        left: "1181px",
+        angle: "12.5deg",
+        zIndex: 3,
+        value: images.year,
+        size: "377px",
+      },
+      {
+        top: "96px",
+        left: "1167px",
+        angle: "12.5deg",
+        zIndex: 3,
+        value: images.year,
+        size: "271px",
+      },
+      {
+        top: "183px",
+        left: "1288px",
+        angle: "12.5deg",
+        zIndex: 3,
+        value: images.year,
+        size: "132px",
+      },
+      {
+        top: "174px",
+        left: "1623px",
+        angle: "24deg",
+        zIndex: 2,
+        value: images.boneDe,
+        size: "310px",
+      },
+      {
+        top: "-37px",
+        left: "1388px",
+        angle: "-167deg",
+        value: images.nozoite,
+        size: "483px",
+      },
+      {
+        top: "41px",
+        left: "1391px",
+        angle: "-167deg",
+        value: images.nozoite,
+        size: "552px",
+      },
+      {
+        top: "646px",
+        left: "1637px",
+        angle: "-49deg",
+        value: images.barDe,
+        size: "607px",
+      },
+    ],
   };
-  
-  layout.texts.forEach((text) => {
-      const sticky = document.createElement("div");
-      sticky.innerHTML = text.value;
-      sticky.setAttribute("data-top", getAdjustedVw(text.top));
-      sticky.setAttribute("data-left", getAdjustedVw(text.left));
-      sticky.style.top = getAdjustedVw(text.top);
-      sticky.style.left = getAdjustedVw(text.left);
-      sticky.style.zIndex = text.zIndex;
-      sticky.style.transform = `rotate(${text.angle})`;
-      sticky.style.fontSize = getAdjustedVw(text.fontSize);
-      sticky.classList.add("paper");
-      sticky.id = text.id;
-      text.classes.forEach((cls) => {
-        sticky.classList.add(cls);
-      });
 
-      container.append(sticky);
+  const container = document.getElementById("container");
+  const spContainer = document.getElementById("container-sp");
+
+  layout.texts.forEach((text) => {
+    container.append(getTextDiv(text));
+  });
+
+  layout.spTexts.forEach((text) => {
+    spContainer.append(getTextDiv(text));
   });
 
   layout.images.forEach((image) => {
-      const sticky = document.createElement("img");
-      sticky.setAttribute("data-top", getAdjustedVw(image.top));
-      sticky.setAttribute("data-left", getAdjustedVw(image.left));
-      sticky.style.top = getAdjustedVw(image.top);
-      sticky.style.left = getAdjustedVw(image.left);
-      sticky.style.zIndex = image.zIndex;
-      sticky.style.transform = `rotate(${image.angle})`;
-      sticky.style.width = getAdjustedVw(image.size);
-      sticky.src = './images/' + image.value
-      sticky.classList.add("paper");
-
-      container.append(sticky);
+    container.append(getImgDiv(image));
   });
+  layout.spImages.forEach((image) => {
+    spContainer.append(getImgDiv(image));
+  });
+}
+
+function getTextDiv(data) {
+  const sticky = document.createElement("div");
+  sticky.innerHTML = data.value;
+  sticky.setAttribute("data-top", getAdjustedVw(data.top));
+  sticky.setAttribute("data-left", getAdjustedVw(data.left));
+  sticky.style.top = getAdjustedVw(data.top);
+  sticky.style.left = getAdjustedVw(data.left);
+  sticky.style.zIndex = data.zIndex;
+  sticky.style.transform = `rotate(${data.angle})`;
+  sticky.style.fontSize = getAdjustedVw(data.fontSize);
+  sticky.classList.add("paper");
+  sticky.id = data.id;
+  data.classes.forEach((cls) => {
+    sticky.classList.add(cls);
+  });
+
+  return sticky;
+}
+
+function getImgDiv(image) {
+  const sticky = document.createElement("img");
+  sticky.setAttribute("data-top", getAdjustedVw(image.top));
+  sticky.setAttribute("data-left", getAdjustedVw(image.left));
+  sticky.style.top = getAdjustedVw(image.top);
+  sticky.style.left = getAdjustedVw(image.left);
+  sticky.style.zIndex = image.zIndex;
+  sticky.style.transform = `rotate(${image.angle})`;
+  sticky.style.width = getAdjustedVw(image.size);
+  sticky.src = "./images/" + image.value;
+  sticky.classList.add("paper");
+
+  return sticky;
 }
 
 function getAdjustedVw(size) {
@@ -725,7 +990,7 @@ function getAdjustedVw(size) {
   if (size.endsWith("vw")) return size;
   if (size.endsWith("px")) {
     const pixel = size.slice(0, size.length - 2);
-    return (pixel  / 1920) * 100 + "vw";
+    return (pixel / 1920) * 100 + "vw";
   }
   return null;
 }
