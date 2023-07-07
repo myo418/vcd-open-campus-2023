@@ -3,14 +3,10 @@ generateStickyElements();
 function generateStickyElements() {
   const texts = {
     visualCommunicationDesign: "Visual<br>Communication<br>Design",
-    nozoite: "のぞいてみよう、視デづくり!",
     openCampus: "Open<br>CamPus",
     time: "9:30-16:30",
     dateFrom: "07.15 >>>",
     dateTo: "07.16",
-    summary:
-      "武蔵野美術大学 鷹の台キャンパス 8（15日のみ）・9・10号館 〒187-8505 東京都小平市小川町1-736 Google Map<br><br>入場",
-    description: "",
   };
   const images = {
     barShi: "bar-shi.svg",
@@ -24,6 +20,10 @@ function generateStickyElements() {
     year: "text-year.svg",
     place: "text-place.svg",
     time: "text-time.svg",
+    meeting: "text-meeting.svg",
+    nyushi: "text-nyushi.svg",
+    recipe: "text-recipe.svg",
+    shigo: "text-shigo.svg",
   };
   const classes = {
     colorBlue: "color-blue",
@@ -69,7 +69,7 @@ function generateStickyElements() {
         left: "470px",
         angle: "4.5deg",
         zIndex: 3,
-        value: "07.15 >>> ",
+        value: texts.dateFrom,
         fontSize: "120px",
         classes: [classes.fontAnthony, classes.colorBlue],
       },
@@ -78,7 +78,7 @@ function generateStickyElements() {
         left: "540px",
         angle: "-2deg",
         zIndex: 4,
-        value: "07.16",
+        value: texts.dateTo,
         fontSize: "120px",
         classes: [classes.fontAnthony, classes.colorBlue],
       },
@@ -325,113 +325,205 @@ function generateStickyElements() {
       },
     ],
     spTexts: [
-      // center top
+      // top
       {
-        top: "525px",
-        left: "458px",
-        angle: "-14deg",
+        top: "43.42px",
+        left: "-196.58px",
+        angle: "134.79deg",
         value: texts.visualCommunicationDesign,
-        fontSize: "120px",
-        classes: [classes.fontAnthonyMultiLine, classes.colorOrange],
+        fontSize: "47px",
+        classes: [classes.fontAnthony, classes.colorBlue],
       },
       {
-        top: "316px",
-        left: "1034px",
-        angle: "26deg",
+        top: "41.82px",
+        left: "236.55px",
+        angle: "-147deg",
+        zIndex: 2,
+        value: "Design",
+        fontSize: "46.5px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      {
+        top: "169.64px",
+        left: "316.91px",
+        angle: "4.62deg",
+        value: "Visual",
+        fontSize: "46.5px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      // center
+      {
+        top: "241.78px",
+        left: "226.45px",
+        angle: "25.38deg",
         zIndex: 3,
         value: texts.openCampus,
-        fontSize: "120px",
+        fontSize: "43.5px",
         classes: [classes.fontAnthonyMultiLine, classes.outlineBlue],
       },
       {
-        top: "903px",
-        left: "783px",
+        top: "319.65px",
+        left: "15.59px",
+        angle: "-14deg",
+        value: texts.visualCommunicationDesign,
+        fontSize: "43.5px",
+        classes: [classes.fontAnthonyMultiLine, classes.colorOrange],
+      },
+      {
+        top: "456.5px",
+        left: "133.43px",
         angle: "-2deg",
         zIndex: 4,
         value: "SAT",
-        fontSize: "55px",
+        fontSize: "20px",
         classes: [classes.fontAnthony, classes.colorBlue],
       },
       {
-        top: "932px",
-        left: "470px",
+        top: "466.99px",
+        left: "20.08px",
         angle: "4.5deg",
         zIndex: 3,
         value: "07.15 >>> ",
-        fontSize: "120px",
+        fontSize: "45px",
         classes: [classes.fontAnthony, classes.colorBlue],
       },
       {
-        top: "1047px",
-        left: "540px",
+        top: "512.18px",
+        left: "45.19px",
         angle: "-2deg",
         zIndex: 4,
         value: "07.16",
-        fontSize: "120px",
+        fontSize: "45px",
         classes: [classes.fontAnthony, classes.colorBlue],
       },
       {
-        top: "1169px",
-        left: "501px",
-        angle: "-2deg",
-        zIndex: 5,
-        value: "SUN",
-        fontSize: "55px",
-        classes: [classes.fontAnthony, classes.colorBlue],
-      },
-      {
-        top: "1156px",
-        left: "776px",
+        top: "549.52px",
+        left: "131.01px",
         angle: "-10deg",
         zIndex: 3,
         value: texts.time,
-        fontSize: "55px",
+        fontSize: "20px",
         classes: [classes.fontAnthony, classes.colorBlue],
       },
-      // left top
+      // middle
       {
-        top: "76px",
-        left: "-275px",
-        angle: "120deg",
-        value: texts.visualCommunicationDesign,
-        fontSize: "120px",
+        top: "653.03px",
+        left: "-96.59px",
+        angle: "-133.1deg",
+        zIndex: 3,
+        value: texts.dateFrom,
+        fontSize: "48px",
         classes: [classes.fontAnthony, classes.colorBlue],
       },
       {
-        top: "413px",
-        left: "-66px",
-        angle: "-42deg",
-        zIndex: 4,
-        value: texts.openCampus,
+        top: "775.2px",
+        left: "-21.22px",
+        angle: "-19.47deg",
+        zIndex: 3,
+        value: texts.dateFrom,
         fontSize: "60px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      {
+        top: "632.79px",
+        left: "232.38px",
+        angle: "4.62deg",
+        zIndex: 3,
+        value: "Communication",
+        fontSize: "25px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      {
+        top: "805.32px",
+        left: "143.2px",
+        angle: "-17.72deg",
+        zIndex: 3,
+        value: "Communication",
+        fontSize: "56px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      {
+        top: "1836.82px",
+        left: "-186.58px",
+        angle: "-12.18deg",
+        zIndex: 3,
+        value: texts.visualCommunicationDesign,
+        fontSize: "70px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      // workshop
+      {
+        top: "2462.33px",
+        left: "38.48px",
+        angle: "4.25deg",
+        zIndex: 3,
+        value: "Workshop",
+        fontSize: "68px",
+        classes: [classes.fontAnthony, classes.colorOrange],
+      },
+      // talk event
+      {
+        top: "3167.28px",
+        left: "15.36px",
+        angle: "-5.95deg",
+        zIndex: 3,
+        value: "Talk Event",
+        fontSize: "72px",
+        classes: [classes.fontAnthony, classes.colorOrange],
+      },
+      {
+        top: "3911.92px",
+        left: "207.64px",
+        angle: "164.1deg",
+        zIndex: 3,
+        value: "Communication",
+        fontSize: "28px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      // bottom
+      {
+        top: "4243.71px",
+        left: "-127.47px",
+        angle: "-19.47deg",
+        zIndex: 3,
+        value: texts.dateFrom,
+        fontSize: "69px",
+        classes: [classes.fontAnthony, classes.colorBlue],
+      },
+      {
+        top: "4227.31px",
+        left: "-73.85px",
+        angle: "-28.82deg",
+        zIndex: 3,
+        value: texts.openCampus,
+        fontSize: "66px",
         classes: [classes.fontAnthony, classes.outlineOrange],
       },
       {
-        top: "934px",
-        left: "-426px",
-        angle: "130deg",
-        zIndex: 1,
-        value: texts.dateFrom,
-        fontSize: "220px",
-        classes: [classes.fontAnthony, classes.colorBlue],
-      },
-      // right top
-      {
-        top: "87px",
-        left: "1488px",
-        angle: "-147deg",
-        zIndex: 1,
-        value: "Design",
+        top: "4352.08px",
+        left: "235.95px",
+        angle: "-11.94deg",
+        zIndex: 3,
+        value: texts.openCampus,
         fontSize: "120px",
-        classes: [classes.fontAnthony, classes.colorBlue],
+        classes: [classes.fontAnthony, classes.outlineOrange],
       },
       {
-        top: "427px",
-        left: "1701px",
-        angle: "4.5deg",
-        zIndex: 1,
-        value: "Visual",
-        fontSize: "120px",
+        top: "4529.52px",
+        left: "9.73px",
+        angle: "173.28deg",
+        zIndex: 3,
+        value: texts.openCampus,
+        fontSize: "42px",
+        classes: [classes.fontAnthony, classes.outlineOrange],
+      },
+      {
+        top: "4548.83px",
+        left: "61.23px",
+        angle: "-25.2deg",
+        zIndex: 3,
+        value: texts.visualCommunicationDesign,
+        fontSize: "72px",
         classes: [classes.fontAnthony, classes.colorBlue],
       },
     ],
@@ -795,139 +887,321 @@ function generateStickyElements() {
       },
     ],
     spImages: [
+      // top
       {
-        top: "188px",
-        left: "692px",
+        top: "117.27px",
+        left: "-73.55px",
+        angle: "12.56deg",
+        zIndex: 2,
+        value: images.nozoite,
+        size: "141.04px",
+      },
+      {
+        top: "136.84px",
+        left: "-106.84px",
+        angle: "12.56deg",
+        zIndex: 3,
+        value: images.nozoite,
+        size: "184.07px",
+      },
+      {
+        top: "162.52px",
+        left: "-125px",
+        angle: "22.55deg",
+        zIndex: 2,
+        value: images.nozoite,
+        size: "217.1px",
+      },
+      {
+        top: "25.95px",
+        left: "23.33px",
+        angle: "4.13deg",
+        zIndex: 2,
+        value: images.boneShi,
+        size: "96.09px",
+      },
+      {
+        top: "-6.92px",
+        left: "83.26px",
+        angle: "29.87deg",
+        zIndex: 3,
+        value: images.roundDe,
+        size: "99.28px",
+      },
+      {
+        top: "10.89px",
+        left: "123.82px",
+        angle: "12.5deg",
+        zIndex: 3,
+        value: images.year,
+        size: "141.38px",
+      },
+      {
+        top: "45.43px",
+        left: "116.42px",
+        angle: "12.5deg",
+        zIndex: 3,
+        value: images.year,
+        size: "101.77px",
+      },
+      {
+        top: "78.11px",
+        left: "161.81px",
+        angle: "12.5deg",
+        zIndex: 3,
+        value: images.year,
+        size: "49.45px",
+      },
+      {
+        top: "-4.73px",
+        left: "199.3px",
+        angle: "-167deg",
+        value: images.nozoite,
+        size: "181.57px",
+      },
+      {
+        top: "25.01px",
+        left: "200.47px",
+        angle: "-167deg",
+        value: images.nozoite,
+        size: "207.31px",
+      },
+      {
+        top: "74.68px",
+        left: "287.41px",
+        angle: "24.33deg",
+        zIndex: 2,
+        value: images.boneDe,
+        size: "116.48px",
+      },
+      // center
+      {
+        top: "197.36px",
+        left: "100.55px",
         angle: "7deg",
         zIndex: 2,
         value: images.barShi,
-        size: "356px",
+        size: "129px",
       },
       {
-        top: "782px",
-        left: "936px",
+        top: "412.74px",
+        left: "188.83px",
         angle: "22deg",
         zIndex: 3,
         value: images.barDe,
-        size: "362px",
+        size: "131.38px",
       },
       {
-        top: "531px",
-        left: "465px",
+        top: "321.86px",
+        left: "18.09px",
         angle: "7deg",
         zIndex: 3,
         value: images.nozoite,
-        size: "372px",
+        size: "134.72px",
       },
       {
-        top: "743px",
-        left: "1115px",
+        top: "398.5px",
+        left: "253.69px",
         angle: "7.5deg",
         zIndex: 3,
         value: images.place,
-        size: "329px",
+        size: "119.26px",
       },
-      // top left
+      // middle
       {
-        top: "246px",
-        left: "62px",
-        angle: "-3deg",
-        zIndex: 2,
-        value: images.nozoite,
-        size: "18.5vw",
+        top: "677.08px",
+        left: "-29.59px",
+        angle: "-126.6deg",
+        zIndex: 3,
+        value: images.barShi,
+        size: "217.12px",
       },
       {
-        top: "301px",
-        left: "-6px",
-        angle: "-3deg",
+        top: "598px",
+        left: "343.07px",
+        angle: "-27.3deg",
+        zIndex: 3,
+        value: images.roundShi,
+        size: "91.91px",
+      },
+      {
+        top: "739.26px",
+        left: "169.04px",
+        angle: "-160.33deg",
         zIndex: 3,
         value: images.nozoite,
-        size: "24.5vw",
+        size: "526.15px",
       },
       {
-        top: "366px",
-        left: "-33px",
-        angle: "7deg",
-        zIndex: 2,
-        value: images.nozoite,
-        size: "29vw",
-      },
-      {
-        top: "-32px",
-        left: "268px",
-        angle: "-20deg",
-        zIndex: 2,
+        top: "1197.02px",
+        left: "125.34px",
+        angle: "62.52deg",
+        zIndex: 3,
         value: images.boneShi,
-        size: "245px",
+        size: "163.32px",
       },
       {
-        top: "-154px",
-        left: "393px",
-        angle: "15deg",
+        top: "1270.78px",
+        left: "-121.61px",
+        angle: "25.68deg",
         zIndex: 3,
         value: images.roundDe,
-        size: "254px",
+        size: "220.37px",
       },
       {
-        top: "950px",
-        left: "-115px",
-        angle: "-17deg",
-        value: images.time,
-        size: "409px",
-      },
-      // top right
-      {
-        top: "-10px",
-        left: "1181px",
-        angle: "12.5deg",
+        top: "1783.56px",
+        left: "238.6px",
+        angle: "-126.6deg",
         zIndex: 3,
-        value: images.year,
-        size: "377px",
+        value: images.barShi,
+        size: "302.02px",
       },
       {
-        top: "96px",
-        left: "1167px",
-        angle: "12.5deg",
+        top: "2026.07px",
+        left: "43.14px",
+        angle: "-163.56deg",
         zIndex: 3,
-        value: images.year,
-        size: "271px",
-      },
-      {
-        top: "183px",
-        left: "1288px",
-        angle: "12.5deg",
-        zIndex: 3,
-        value: images.year,
-        size: "132px",
-      },
-      {
-        top: "174px",
-        left: "1623px",
-        angle: "24deg",
-        zIndex: 2,
-        value: images.boneDe,
-        size: "310px",
-      },
-      {
-        top: "-37px",
-        left: "1388px",
-        angle: "-167deg",
-        value: images.nozoite,
-        size: "483px",
-      },
-      {
-        top: "41px",
-        left: "1391px",
-        angle: "-167deg",
-        value: images.nozoite,
-        size: "552px",
-      },
-      {
-        top: "646px",
-        left: "1637px",
-        angle: "-49deg",
         value: images.barDe,
-        size: "607px",
+        size: "184.45px",
+      },
+      // workshop
+      {
+        top: "2277.5px",
+        left: "-78.64px",
+        angle: "-22.4deg",
+        zIndex: 3,
+        value: "face-1.svg",
+        size: "243.73px",
+      },
+      {
+        top: "2231.66px",
+        left: "222.27px",
+        angle: "9.84deg",
+        zIndex: 3,
+        value: "face-2.svg",
+        size: "166.73px",
+      },
+      {
+        top: "2794.7px",
+        left: "-35.13px",
+        angle: "6.04deg",
+        zIndex: 3,
+        value: "face-3.svg",
+        size: "238.92px",
+      },
+      {
+        top: "2681.25px",
+        left: "142.65px",
+        angle: "12.15deg",
+        zIndex: 3,
+        value: "face-4.svg",
+        size: "405.16px",
+      },
+      // talk event
+      {
+        top: "3243.78px",
+        left: "245.23px",
+        angle: "4.34deg",
+        zIndex: 3,
+        value: images.textMeeing,
+        size: "129.64px",
+      },
+      {
+        top: "3399.53px",
+        left: "125.94px",
+        angle: "3.88deg",
+        zIndex: 3,
+        value: images.nyushi,
+        size: "236.2px",
+      },
+      {
+        top: "3387.67px",
+        left: "-155.97px",
+        angle: "68.76deg",
+        zIndex: 3,
+        value: images.barDe,
+        size: "245.3px",
+      },
+      {
+        top: "3635.56px",
+        left: "11.16px",
+        angle: "-2.56deg",
+        zIndex: 3,
+        value: images.recipe,
+        size: "338.7px",
+      },
+      {
+        top: "3980.36px",
+        left: "126.29px",
+        angle: "2.53deg",
+        zIndex: 3,
+        value: images.shigo,
+        size: "232.48px",
+      },
+      {
+        top: "3953.8px",
+        left: "243.08px",
+        angle: "-165.12deg",
+        zIndex: 3,
+        value: images.place,
+        size: "282.38px",
+      },
+      // bottom
+      {
+        top: "4360px",
+        left: "81.7px",
+        angle: "-126.6deg",
+        zIndex: 3,
+        value: images.barShi,
+        size: "171.19px",
+      },
+      {
+        top: "4536.76px",
+        left: "-244.45px",
+        angle: "-23.77deg",
+        zIndex: 3,
+        value: images.barDe,
+        size: "361.35px",
+      },
+      {
+        top: "4431.79px",
+        left: "-298.82px",
+        angle: "-160.33eg",
+        zIndex: 3,
+        value: images.nozoite,
+        size: "653.95px",
+      },
+      {
+        top: "4532.16px",
+        left: "-209.93px",
+        angle: "-137.44deg",
+        zIndex: 3,
+        value: images.nozoite,
+        size: "333.36px",
+      },
+      {
+        top: "4573.55px",
+        left: "-201.36px",
+        angle: "-147.43deg",
+        zIndex: 3,
+        value: images.nozoite,
+        size: "282.64px",
+      },
+      {
+        top: "4602.41px",
+        left: "-196.8px",
+        angle: "-147.43deg",
+        zIndex: 3,
+        value: images.nozoite,
+        size: "216.57px",
+      },
+      {
+        top: "4643.76px",
+        left: "305.85px",
+        angle: "23.52deg",
+        zIndex: 3,
+        value: images.barShi,
+        size: "279.88px",
       },
     ],
   };
@@ -936,31 +1210,31 @@ function generateStickyElements() {
   const spContainer = document.getElementById("container-sp");
 
   layout.texts.forEach((text) => {
-    container.append(getTextDiv(text));
+    container.append(getTextDiv(text, getAdjustedVw));
   });
 
   layout.spTexts.forEach((text) => {
-    spContainer.append(getTextDiv(text));
+    spContainer.append(getTextDiv(text, getAdjustedSpVw));
   });
 
   layout.images.forEach((image) => {
-    container.append(getImgDiv(image));
+    container.append(getImgDiv(image, getAdjustedVw));
   });
   layout.spImages.forEach((image) => {
-    spContainer.append(getImgDiv(image));
+    spContainer.append(getImgDiv(image, getAdjustedSpVw));
   });
 }
 
-function getTextDiv(data) {
+function getTextDiv(data, vwFunc) {
   const sticky = document.createElement("div");
   sticky.innerHTML = data.value;
-  sticky.setAttribute("data-top", getAdjustedVw(data.top));
-  sticky.setAttribute("data-left", getAdjustedVw(data.left));
-  sticky.style.top = getAdjustedVw(data.top);
-  sticky.style.left = getAdjustedVw(data.left);
+  sticky.setAttribute("data-top", vwFunc(data.top));
+  sticky.setAttribute("data-left", vwFunc(data.left));
+  sticky.style.top = vwFunc(data.top);
+  sticky.style.left = vwFunc(data.left);
   sticky.style.zIndex = data.zIndex;
   sticky.style.transform = `rotate(${data.angle})`;
-  sticky.style.fontSize = getAdjustedVw(data.fontSize);
+  sticky.style.fontSize = vwFunc(data.fontSize);
   sticky.classList.add("paper");
   sticky.id = data.id;
   data.classes.forEach((cls) => {
@@ -970,15 +1244,15 @@ function getTextDiv(data) {
   return sticky;
 }
 
-function getImgDiv(image) {
+function getImgDiv(image, vwFunc) {
   const sticky = document.createElement("img");
-  sticky.setAttribute("data-top", getAdjustedVw(image.top));
-  sticky.setAttribute("data-left", getAdjustedVw(image.left));
-  sticky.style.top = getAdjustedVw(image.top);
-  sticky.style.left = getAdjustedVw(image.left);
+  sticky.setAttribute("data-top", vwFunc(image.top));
+  sticky.setAttribute("data-left", vwFunc(image.left));
+  sticky.style.top = vwFunc(image.top);
+  sticky.style.left = vwFunc(image.left);
   sticky.style.zIndex = image.zIndex;
   sticky.style.transform = `rotate(${image.angle})`;
-  sticky.style.width = getAdjustedVw(image.size);
+  sticky.style.width = vwFunc(image.size);
   sticky.src = "./images/" + image.value;
   sticky.classList.add("paper");
 
@@ -991,6 +1265,16 @@ function getAdjustedVw(size) {
   if (size.endsWith("px")) {
     const pixel = size.slice(0, size.length - 2);
     return (pixel / 1920) * 100 + "vw";
+  }
+  return null;
+}
+
+function getAdjustedSpVw(size) {
+  if (typeof size !== "string") return null;
+  if (size.endsWith("vw")) return size;
+  if (size.endsWith("px")) {
+    const pixel = size.slice(0, size.length - 2);
+    return (pixel / 390) * 100 + "vw";
   }
   return null;
 }
