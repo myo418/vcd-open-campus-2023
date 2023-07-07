@@ -266,6 +266,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    height: 1250vw;
+  }
+
   .font-anthony {
     padding: 0 0.1em 0.3em 0.1em;
   }
@@ -287,6 +291,10 @@ body {
   .buttons {
     font-size: 11.8vw;
 
+  }
+
+  .card {
+    font-size: 3.4vw;
   }
 
   .home-button {
@@ -312,5 +320,49 @@ body {
     left: -30vw;
     width: 49.7vw;
     transform: rotate(-7.4deg);
+  }
+
+  .event-description {
+    width: 83.1vw;
+    transform: rotate(1.37deg);
+  }
+
+  .event-summary {
+    width: 83.1vw;
+    transform: rotate(-1.79deg);
+  }
+
+  .workshop-summary {
+    width: 76vw;
+    transform: rotate(-3.33deg);
+  }
+
+  .workshop-description {
+    width: 68.46vw;
+    transform: rotate(4.85deg);
+  }
+
+  .talk-event-meeting {
+    width: 57.77vw;
+    transform: rotate(-3.33deg);
+  }
+
+  .talk-event-nyushi {
+    width: 68.56vw;
+    transform: rotate(4.18deg);
+  }
+
+  .talk-event-recipe {
+    width: 68.56vw;
+    transform: rotate(-2.26deg);
+  }
+
+  .talk-event-shigo {
+    width: 68.56vw;
+    transform: rotate(2.84deg);
+  }
+
+  .to-top {
+    transform: rotate(2.15deg)
   }
 }
