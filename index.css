@@ -266,6 +266,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .font-anthony {
+    padding: 0 0.1em 0.3em 0.1em;
+  }
+
   #container {
     display: none;
   }
@@ -282,26 +286,31 @@ body {
 
   .buttons {
     font-size: 11.8vw;
+
   }
 
   .home-button {
     top: 58.1vw;
     left: -30vw;
+    transform: rotate(-8.51deg);
   }
-  
+
   .workshop-button {
     top: 77.7vw;
     left: 130vw;
+    transform: rotate(2.95deg);
   }
-  
+
   .talk-event-button {
     top: 99vw;
-    left: -30vw;
+    left: 130vw;
+    transform: rotate(-3.15deg);
   }
-  
+
   .register-button {
     top: 120.6vw;
-    left: 130vw;
-    width: 24.7vw;
+    left: -30vw;
+    width: 49.7vw;
+    transform: rotate(-7.4deg);
   }
 }
