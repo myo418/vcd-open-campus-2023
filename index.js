@@ -66,15 +66,16 @@ function addMenuToggleAnimation() {
           ? leftTarget
           : rightTarget
         : dataLeft;
-        elm.animate(
+      elm.animate(
         {
-          left: [elm.clientLeft, targetLeft],
+          left: [elm.style.left, targetLeft],
         },
         {
           fill: "forwards",
           duration: 100,
         }
       );
+      // elm.style.left = targetLeft;
     }
   });
 
@@ -88,13 +89,14 @@ function addMenuToggleAnimation() {
       const targetLeft = isMenuOpen ? dataLeft : isLeft ? "-30vw" : "130vw";
       elm.animate(
         {
-          left: [elm.clientLeft, targetLeft],
+          left: [elm.style.left, targetLeft],
         },
         {
           fill: "forwards",
           duration: 200,
         }
       );
+      // elm.style.left = targetLeft;
     }
   });
 }
