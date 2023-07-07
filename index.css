@@ -329,11 +329,13 @@ body {
   .event-description {
     width: 83.1vw;
     transform: rotate(1.37deg);
+    z-index: 25;
   }
 
   .event-summary {
     width: 83.1vw;
     transform: rotate(-1.79deg);
+    z-index: 25;
   }
 
   .workshop-summary {

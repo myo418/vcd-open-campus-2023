@@ -7,14 +7,15 @@
 ## Todos
 
 - SP版の実装
-  - anchorの実装
   - z-index整理
-  - back-to-topのサイズ
+  - back-to-topのサイズ調整
+  - 参加登録のサイズ調整
   - menuの位置、もっと枠外に
-  - Menu toggleのサイズ
+  - Menu toggleのサイズ調整
 - body heightをvw指定
 
 ## Bugs
 
+- workshop/talk eventのanchorの実装
 - アニメーションの開始位置か終点がおかしい
 - 下の方の要素、stickyの動きがずれる。
