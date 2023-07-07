@@ -62,7 +62,7 @@ function generateStickyElements() {
         zIndex: 4,
         value: "SAT",
         fontSize: "55px",
-        classes: [classes.fontAnthony, classes.colorLightBlue],
+        classes: [classes.fontAnthony, classes.colorBlue],
       },
       {
         top: "932px",
@@ -71,7 +71,7 @@ function generateStickyElements() {
         zIndex: 3,
         value: "07.15 >>> ",
         fontSize: "120px",
-        classes: [classes.fontAnthony, classes.colorLightBlue],
+        classes: [classes.fontAnthony, classes.colorBlue],
       },
       {
         top: "1047px",
@@ -342,7 +342,7 @@ function generateStickyElements() {
         angle: "22deg",
         zIndex: 3,
         value: images.barDe,
-        fontSize: "362px",
+        size: "362px",
       },
       {
         top: "531px",

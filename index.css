@@ -38,7 +38,7 @@
 
 @font-face {
   font-family: "Jp-kaku";
-  src: url("./fonts/OC2023_OriginalFont-R.otf") format("otf");
+  src: url("./fonts/OC2023_OriginalFont-R.otf") format("opentype");
 }
 
 .font-anthony {
@@ -51,6 +51,13 @@
   font-family: "Anthony", sans-serif;
   line-height: 0.95em;
   padding: 0 0.1em 0.25em 0.1em;
+}
+
+.font-kaku {
+  font-family: "Jp-kaku";
+  font-size: 2vw;
+  /* line-height: 0.75em;
+  padding: 0 0.1em 0.25em 0.1em; */
 }
 
 .font-tazugane {
@@ -174,15 +181,15 @@ body {
   transform: rotate(-7.5deg);
   top: 35.5vw;
   left: 130vw;
+  width: 24.7vw;
   padding: 0;
-
 }
 
 /* other */
 
 .register {
-  width: 14.5vw;
   z-index: 4;
+  width: 14.6vw;
   transform: rotate(3.5deg);
 }
 
