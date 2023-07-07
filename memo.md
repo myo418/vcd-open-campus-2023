@@ -7,11 +7,9 @@
 ## Todos
 
 - SP版の実装
-  - z-index整理
   - back-to-topのサイズ調整
   - 参加登録のサイズ調整
   - menuの位置、もっと枠外に
-  - Menu toggleのサイズ調整
 - body heightをvw指定
 
 ## Bugs

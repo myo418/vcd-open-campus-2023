@@ -77,7 +77,7 @@ html, body {
 body {
   background-color: var(--color-background);
   background-image: url("./images/background.svg");
-  height: 8076px;
+  height: 400vw;
   width: 100%;
   margin:  0;
   overflow-x: hidden;
@@ -267,7 +267,7 @@ body {
 
 @media screen and (max-width: 600px) {
   body {
-    height: 1250vw;
+    height: 1240vw;
   }
 
   .font-anthony {
@@ -282,6 +282,11 @@ body {
     display: block;
   }
 
+  .buttons {
+    font-size: 11.8vw;
+    border: 0.5px solid black;
+  }
+
   .menu-toggle {
     font-size: 7.2vw;
     top: 5vw;
@@ -289,11 +294,6 @@ body {
   }
 
   .paper {
-    border: 0.5px solid black;
-  }
-
-  .buttons {
-    font-size: 11.8vw;
     border: 0.5px solid black;
   }
 
@@ -369,6 +369,7 @@ body {
   }
 
   .to-top {
+    font-size: 7.2vw;
     transform: rotate(2.15deg)
   }
 }
