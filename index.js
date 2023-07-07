@@ -75,7 +75,7 @@ function addMenuToggleAnimation() {
           duration: 100,
         }
       );
-      // elm.style.left = targetLeft;
+      elm.style.left = targetLeft;
     }
   });
 
@@ -96,7 +96,7 @@ function addMenuToggleAnimation() {
           duration: 200,
         }
       );
-      // elm.style.left = targetLeft;
+      elm.style.left = targetLeft;
     }
   });
 }
