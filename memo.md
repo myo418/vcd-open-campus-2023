@@ -6,8 +6,7 @@
 
 ## Todos
 
-- SP版の実装
-  - menuの位置、もっと枠外に
+nothing
 
 ## Bugs
 
