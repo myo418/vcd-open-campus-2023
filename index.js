@@ -17,7 +17,6 @@ for (const button of document.getElementsByClassName("close")) {
   button.onclick = () => closeMenu();
 }
 
-
 for (const button of document.getElementsByClassName("home-button")) {
   button.onclick = () => closeMenu();
 }
@@ -87,17 +86,6 @@ function addMenuToggleAnimation() {
       const isLeft = elmCenter < screen.width / 2;
 
       const targetLeft = isMenuOpen ? dataLeft : isLeft ? "-30vw" : "130vw";
-      console.log('text: ' + elm.innerHTML)
-      // console.log('data-left: ' + dataLeft)
-      // console.log('data-left(px): ' + getAdjustedPixel(dataLeft))
-      // console.log('elm.offsetWidth: ' + elm.offsetWidth)
-      // console.log('elmCenter: ' + elmCenter)
-      // console.log(isLeft)
-      console.log(dataLeft)
-      console.log(getAdjustedPixel(dataLeft))
-      // console.log(dataLeft)
-      // console.log(elm.clientLeft)
-      // console.log(targetLeft)
       elm.animate(
         {
           left: [elm.clientLeft, targetLeft],
