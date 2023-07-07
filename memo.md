@@ -7,6 +7,12 @@
 ## Todos
 
 - SP版の実装
+  - anchorの実装
+  - z-index整理
+  - back-to-topのサイズ
+  - menuの位置、もっと枠外に
+  - Menu toggleのサイズ
+- body heightをvw指定
 
 ## Bugs
 
