@@ -133,15 +133,15 @@ body {
 
 /* menu */
 
-#close {
+.close {
   display: none;
 }
 
-#container.open > #close {
+.open > .close {
   display: block;
 }
 
-#container.open > #menu {
+.open > .menu {
   display: none;
 }
 

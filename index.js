@@ -3,13 +3,20 @@ let isMenuOpen = false;
 fixStickyElementPositions();
 window.addEventListener("scroll", fixStickyElementPositions);
 
-document.getElementById("menu").onclick = () => {
-  document.getElementById("container").classList.add("open");
-  isMenuOpen = true;
-  addMenuToggleAnimation();
-};
+for (const button of document.getElementsByClassName("menu")) {
+  button.onclick = () => {
+    console.log("click");
+    document.getElementById("container").classList.add("open");
+    document.getElementById("container-sp").classList.add("open");
+    isMenuOpen = true;
+    addMenuToggleAnimation();
+  };
+}
 
-document.getElementById("close").onclick = () => closeMenu();
+for (const button of document.getElementsByClassName("close")) {
+  button.onclick = () => closeMenu();
+}
+
 
 for (const button of document.getElementsByClassName("home-button")) {
   button.onclick = () => closeMenu();
@@ -23,6 +30,7 @@ for (const button of document.getElementsByClassName("talk-event-button")) {
 
 function closeMenu() {
   document.getElementById("container").classList.remove("open");
+  document.getElementById("container-sp").classList.remove("open");
   isMenuOpen = false;
   addMenuToggleAnimation();
 }
