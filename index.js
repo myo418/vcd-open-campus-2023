@@ -1,7 +1,7 @@
 let isMenuOpen = false;
 
-fixStickyElementPositions();
-window.addEventListener("scroll", fixStickyElementPositions);
+// fixStickyElementPositions();
+// window.addEventListener("scroll", fixStickyElementPositions);
 
 for (const button of document.getElementsByClassName("menu")) {
   button.onclick = () => {

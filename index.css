@@ -79,10 +79,10 @@ body {
   background-image: url("./images/background.svg");
   height: 400vw;
   width: 100%;
-  margin:  0;
+  margin: 0;
   overflow-x: hidden;
+  overflow-y: hidden;
   position:relative;
-  overflow-x: hidden;
 }
 
 .wrapper {
@@ -132,7 +132,6 @@ body {
   font-size: 6vw;
   text-decoration: underline;
   text-decoration-thickness: 0.05em;
-  box-shadow: 0 0 3px 1px darkslategray;
 }
 
 .card {
@@ -143,6 +142,10 @@ body {
 
 .item-title {
   font-size: 0.8vw;
+}
+
+.block-in-card {
+  margin-bottom: 1em;
 }
 
 /* menu */
@@ -267,7 +270,7 @@ body {
 
 @media screen and (max-width: 600px) {
   body {
-    height: 1240vw;
+    height: 1250vw;
   }
 
   .font-anthony {

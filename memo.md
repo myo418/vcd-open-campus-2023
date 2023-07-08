@@ -14,3 +14,12 @@ nothing
 - アニメーションの開始位置か終点がおかしい
 - 下の方の要素、stickyの動きがずれる。
 - カッターマットの背景が縦につなぎ目ができる
+
+
+## Todo for the first release
+
+- [ ] 背景のズレなくす
+- [ ] SPのメニューのanchorを機能させる
+- [ ] SP終日のかぶり
+- [ ] workshop summaryの行間
+- [ ] 顔の背景を無くす
