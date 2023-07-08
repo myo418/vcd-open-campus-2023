@@ -10,12 +10,15 @@ nothing
 
 ## Bugs
 
-- menu内のworkshop/talk eventのanchor動いてない
 - アニメーションの開始位置か終点がおかしい
 - 下の方の要素、stickyの動きがずれる。
-- カッターマットの背景が縦につなぎ目ができる
-
 
 ## Todo for the first release
 
-- [ ] 背景のズレなくす
+- stickyを一時的に解除
+- 背景のズレなくす
+- menu内のworkshop/talk eventのanchor動いてない
+- 「終日」のかぶり
+- workshop/summaryのカード、一部の行間が広すぎる
+- 顔の背景を無くす
+- 
