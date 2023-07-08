@@ -10,7 +10,7 @@ nothing
 
 ## Bugs
 
-- workshop/talk eventのanchorの実装
+- menu内のworkshop/talk eventのanchor動いてない
 - アニメーションの開始位置か終点がおかしい
 - 下の方の要素、stickyの動きがずれる。
 - カッターマットの背景が縦につなぎ目ができる
