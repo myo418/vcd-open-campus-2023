@@ -59,14 +59,15 @@
 }
 
 .font-tazugane {
-  font-family: 'TazuganeGothicRegular';
-  font-style: 'Normal';
-  font-stretch: 'Normal';
+  font-family: "TazuganeGothicRegular";
+  font-style: "Normal";
+  font-stretch: "Normal";
 }
 
 /* common */
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   width: 100%;
   height: 100%;
@@ -80,7 +81,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   overflow-y: hidden;
-  position:relative;
+  position: relative;
 }
 
 .wrapper {
@@ -269,6 +270,16 @@ body {
 
 .hidden-anchor {
   position: absolute;
+  left: 50vw;
+}
+
+.workshop-anchor {
+  top: 205vw;
+  left: 50vw;
+}
+
+.talk-event-anchor {
+  top: 255vw;
 }
 
 @media screen and (max-width: 600px) {
@@ -383,6 +394,14 @@ body {
 
   .to-top {
     font-size: 7.2vw;
-    transform: rotate(2.15deg)
+    transform: rotate(2.15deg);
+  }
+
+  .workshop-anchor {
+    top: 620vw;
+  }
+
+  .talk-event-anchor {
+    top: 800vw;
   }
 }
