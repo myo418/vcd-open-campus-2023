@@ -56,8 +56,6 @@
 .font-kaku {
   font-family: "Jp-kaku";
   font-size: 2vw;
-  /* line-height: 0.75em;
-  padding: 0 0.1em 0.25em 0.1em; */
 }
 
 .font-tazugane {
@@ -302,6 +300,7 @@ body {
 
   .card {
     font-size: 3.4vw;
+    padding: 2vw;
   }
 
   .home-button {
@@ -341,7 +340,8 @@ body {
   }
 
   .event-summary {
-    width: 83.1vw;
+    padding: 3vw;
+    width: 72.1vw;
     transform: rotate(-1.79deg);
     z-index: 25;
   }
