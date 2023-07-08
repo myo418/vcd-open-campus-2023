@@ -76,6 +76,7 @@ body {
 body {
   background-color: var(--color-background);
   background-image: url("./images/background.svg");
+  background-size: cover;
   height: 400vw;
   width: 100%;
   margin: 0;
@@ -285,6 +286,7 @@ body {
 @media screen and (max-width: 600px) {
   body {
     height: 1250vw;
+    background-size: auto;
   }
 
   .font-anthony {

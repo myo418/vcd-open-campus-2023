@@ -19,4 +19,3 @@ nothing
 ## Todo for the first release
 
 - [ ] 背景のズレなくす
-- [ ] SPのメニューのanchorを機能させる
