@@ -20,6 +20,4 @@ nothing
 
 - [ ] 背景のズレなくす
 - [ ] SPのメニューのanchorを機能させる
-- [ ] SP終日のかぶり
-- [ ] workshop summaryの行間
 - [ ] 顔の背景を無くす

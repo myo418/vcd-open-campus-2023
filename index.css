@@ -138,6 +138,11 @@ body {
   font-size: 1vw;
 }
 
+.face {
+  border: none !important;
+  background-color: transparent;
+}
+
 .item-title {
   font-size: 0.8vw;
 }

@@ -33,6 +33,7 @@ function generateStickyElements() {
     outlineOrange: "outline-orange",
     fontAnthony: "font-anthony",
     fontAnthonyMultiLine: "font-anthony-multi-line",
+    face: "face",
   };
 
   const layout = {
@@ -723,6 +724,7 @@ function generateStickyElements() {
         zIndex: 30,
         value: "face-1.svg",
         size: "679px",
+        classes: [classes.face],
       },
       {
         top: "3675px",
@@ -731,6 +733,7 @@ function generateStickyElements() {
         zIndex: 30,
         value: "face-2.svg",
         size: "426px",
+        classes: [classes.face],
       },
       {
         top: "4285px",
@@ -739,6 +742,7 @@ function generateStickyElements() {
         zIndex: 30,
         value: "face-3.svg",
         size: "430px",
+        classes: [classes.face],
       },
       {
         top: "3959px",
@@ -747,6 +751,7 @@ function generateStickyElements() {
         zIndex: 30,
         value: "face-4.svg",
         size: "709px",
+        classes: [classes.face],
       },
       {
         top: "4555px",
@@ -1073,6 +1078,7 @@ function generateStickyElements() {
         zIndex: 30,
         value: "face-1.svg",
         size: "243.73px",
+        classes: [classes.face],
       },
       {
         top: "2231.66px",
@@ -1081,6 +1087,7 @@ function generateStickyElements() {
         zIndex: 30,
         value: "face-2.svg",
         size: "166.73px",
+        classes: [classes.face],
       },
       {
         top: "2794.7px",
@@ -1089,6 +1096,7 @@ function generateStickyElements() {
         zIndex: 32,
         value: "face-3.svg",
         size: "238.92px",
+        classes: [classes.face],
       },
       {
         top: "2681.25px",
@@ -1097,6 +1105,7 @@ function generateStickyElements() {
         zIndex: 31,
         value: "face-4.svg",
         size: "405.16px",
+        classes: [classes.face],
       },
       // talk event
       {
@@ -1256,6 +1265,9 @@ function getImgDiv(image, vwFunc) {
   sticky.style.width = vwFunc(image.size);
   sticky.src = "./images/" + image.value;
   sticky.classList.add("paper");
+  image.classes && image.classes.forEach((cls) => {
+    sticky.classList.add(cls);
+  });
 
   return sticky;
 }
