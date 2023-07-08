@@ -5,7 +5,6 @@ let isMenuOpen = false;
 
 for (const button of document.getElementsByClassName("menu")) {
   button.onclick = () => {
-    console.log("click");
     document.getElementById("container").classList.add("open");
     document.getElementById("container-sp").classList.add("open");
     isMenuOpen = true;
@@ -86,7 +85,7 @@ function addMenuToggleAnimation() {
       const elmCenter = getAdjustedPixel(dataLeft) + elm.offsetWidth / 2;
       const isLeft = elmCenter < screen.width / 2;
 
-      const targetLeft = isMenuOpen ? dataLeft : isLeft ? "-50vw" : "150vw";
+      const targetLeft = isMenuOpen ? dataLeft : isLeft ? "-80vw" : "180vw";
       elm.animate(
         {
           left: [elm.style.left, targetLeft],
