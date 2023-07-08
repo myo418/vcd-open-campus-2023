@@ -395,6 +395,10 @@ body {
     transform: rotate(2.84deg);
   }
 
+  .item-title {
+    font-size: 3vw;
+  }
+
   .to-top {
     font-size: 7.2vw;
     transform: rotate(2.15deg);
