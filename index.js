@@ -1,7 +1,7 @@
 let isMenuOpen = false;
 
-// fixStickyElementPositions();
-// window.addEventListener("scroll", fixStickyElementPositions);
+fixStickyElementPositions();
+window.addEventListener("scroll", fixStickyElementPositions);
 
 for (const button of document.getElementsByClassName("menu")) {
   button.onclick = () => {
@@ -57,8 +57,8 @@ function addMenuToggleAnimation() {
       const dataLeft = elm.getAttribute("data-left");
       const elmCenter = getAdjustedPixel(dataLeft) + elm.offsetWidth / 2;
       const isLeft = elmCenter < screen.width / 2;
-      const leftTarget = toVw(-elm.offsetWidth / 2);
-      const rightTarget = toVw(screen.width - elm.offsetWidth / 2);
+      const leftTarget = toVw(-elm.offsetWidth * 0.7);
+      const rightTarget = toVw(screen.width - elm.offsetWidth * 0.3);
 
       const targetLeft = isMenuOpen
         ? isLeft
